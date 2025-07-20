@@ -1,0 +1,17 @@
+development:
+  adapter: redis
+  url: <%= AppConfig.redis.url %>
+  channel_prefix: test_123_development
+
+test:
+  adapter: test
+
+staging:
+  adapter: redis
+  urll: <%= AppConfig.redis.url %>
+  channel_prefix: test_123_staging
+
+production:
+  adapter: redis
+  url: <%= AppConfig.redis.url %>
+  channel_prefix: test_123_production
